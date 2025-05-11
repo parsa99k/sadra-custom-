@@ -3,15 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="صفحه رسمی صدرا کاستوم - مسابقه Call of Duty Mobile با جوایز CP و نقدی!" />
   <title>صدرا کاستوم | مسابقه کالاف دیوتی</title>
+
+  <!-- استایل عمومی -->
   <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Tahoma', sans-serif;
       background-color: #000;
       color: #fff;
-      margin: 0;
-      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: none;
+    }
+
     header {
       background: linear-gradient(90deg, #e50914, #ff4c4c);
       padding: 20px 0;
@@ -23,6 +45,7 @@
       position: relative;
       overflow: hidden;
     }
+
     header::after {
       content: '';
       position: absolute;
@@ -33,11 +56,13 @@
       background: linear-gradient(90deg, transparent, #e50914, transparent);
       animation: shine 3s infinite;
     }
+
     @keyframes shine {
       0% { left: -100%; }
       50% { left: 100%; }
       100% { left: 100%; }
     }
+
     nav {
       background-color: #111;
       display: flex;
@@ -47,14 +72,11 @@
       font-size: 1.1em;
       border-bottom: 1px solid #333;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
+
     nav a:hover {
       color: #e50914;
     }
+
     .hero {
       background: url('https://images.unsplash.com/photo-1601653530703-6b0a3e9e6a0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
       height: 85vh;
@@ -66,18 +88,21 @@
       flex-direction: column;
       position: relative;
     }
+
     .hero::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0,0,0,0.6);
     }
+
     .hero h1 {
       font-size: 3.5em;
       margin-bottom: 15px;
       text-shadow: 3px 3px 8px #000;
       z-index: 2;
     }
+
     .hero p {
       font-size: 1.3em;
       max-width: 700px;
@@ -86,17 +111,20 @@
       padding: 20px;
       border-radius: 12px;
     }
+
     .section {
       padding: 60px 20px;
       text-align: center;
       background-color: #0f0f0f;
     }
+
     .section h2 {
       font-size: 2.2em;
       margin-bottom: 25px;
       color: #0f0;
       text-shadow: 0 0 5px #0f0;
     }
+
     .section p {
       font-size: 1.2em;
       max-width: 800px;
@@ -104,27 +132,32 @@
       line-height: 1.7;
       color: #ccc;
     }
+
     .contest {
       background-color: #1a1a1a;
       padding: 50px 20px;
       border-top: 2px dashed #e50914;
       border-bottom: 2px dashed #e50914;
     }
+
     .contest h2 {
       color: #0f0;
       margin-bottom: 20px;
       font-size: 2em;
     }
+
     .contest p {
       font-size: 1.3em;
       margin-bottom: 30px;
     }
+
     .prize {
       font-size: 1.4em;
       color: gold;
       margin-top: 20px;
       font-weight: bold;
     }
+
     .btn {
       background-color: #e50914;
       color: white;
@@ -136,16 +169,19 @@
       box-shadow: 0 0 10px #e50914;
       transition: all 0.3s ease;
     }
+
     .btn:hover {
       background-color: #c20711;
       box-shadow: 0 0 20px #c20711;
     }
+
     .result {
       margin-top: 25px;
       font-size: 1.3em;
       color: #0f0;
       font-weight: bold;
     }
+
     footer {
       background-color: #000;
       color: #666;
@@ -154,6 +190,7 @@
       font-size: 0.9em;
       border-top: 1px solid #333;
     }
+
     .game-logo {
       width: 120px;
       height: 120px;
